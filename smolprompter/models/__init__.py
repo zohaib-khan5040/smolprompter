@@ -1,1 +1,1 @@
-from chat import *
+from .chat import *

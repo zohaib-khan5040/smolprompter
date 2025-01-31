@@ -15,7 +15,7 @@ class OpenAIClient(ChatClient):
             messages=messages,
             **kwargs
         )
-        response_content = response.choices[0].messages.content
+        response_content = response.choices[0].message.content
         return {
             "content": response_content
         }
